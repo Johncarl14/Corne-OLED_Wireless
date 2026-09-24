@@ -39,7 +39,7 @@
 &kp GRAVE       &kp N1           &kp N2         &kp N3     &kp N4      &kp N5            &kp N6     &kp N7            &kp N8             &kp N9                &kp N0                 &kp BSPC
 &kp LEFT_SHIFT  &kp EXCLAMATION  &kp AT_SIGN    &kp HASH   &kp DOLLAR  &kp PERCENT       &kp CARET  &kp AMPERSAND     &kp ASTERISK       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL
 &kp ESCAPE      &kp PIPE         &kp BACKSLASH  &kp TILDE  &kp MINUS   &kp UNDERSCORE    &kp PLUS   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp RIGHT_SHIFT
-                                                &trans     &trans      &trans            &kp LCTRL  &trans            &kp RALT
+                                                &trans     &trans      &trans            &trans     &kp LEFT_CONTROL  &kp RALT
             >;
         };
 
@@ -60,10 +60,10 @@
 
         layer_3 {
             bindings = <
-&tog 3  &kp F1   &kp F2   &kp F3  &kp F4  &kp F5     &trans  &trans  &trans  &trans  &mkp LCLK  &trans
-&trans  &kp F6   &kp F7   &kp F8  &kp F9  &kp F10    &trans  &trans  &trans  &trans  &trans     &trans
-&trans  &kp F11  &kp F12  &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans     &trans
-                          &trans  &trans  &trans     &trans  &trans  &trans
+&tog 3  &kp F1   &kp F2   &kp F3  &kp F4  &kp F5     &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &mkp LCLK       &trans
+&trans  &kp F6   &kp F7   &kp F8  &kp F9  &kp F10    &kp LEFT        &kp DOWN        &kp UP        &kp RIGHT        &msc SCRL_UP    &trans
+&trans  &kp F11  &kp F12  &trans  &trans  &trans     &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END          &msc SCRL_DOWN  &trans
+                          &trans  &trans  &trans     &trans          &trans          &trans
             >;
         };
     };
